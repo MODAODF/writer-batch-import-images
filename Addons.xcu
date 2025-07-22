@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<oor:component-data xmlns:oor="http://openoffice.org/2001/registry" 
+ xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+ oor:name="Addons" oor:package="org.openoffice.Office">
+	<node oor:name="AddonUI">
+		<node oor:name="OfficeToolbarMerging">
+			<node oor:name="org.ossii.writerbatchimport.OfficeToolbarMerging" oor:op="replace">
+				<node oor:name="N001" oor:op="replace">
+					<prop oor:name="MergeContext" oor:type="xs:string">
+						<value/>
+					</prop>
+					<prop oor:name="MergeToolBar" oor:type="xs:string">
+						<value>standardbar</value>
+					</prop>
+					<prop oor:name="MergePoint" oor:type="xs:string">
+						<value>.uno:InsertGraphic</value>
+					</prop>
+					<prop oor:name="MergeCommand" oor:type="xs:string">
+						<value>AddAfter</value>
+					</prop>
+					<prop oor:name="MergeFallback" oor:type="xs:string">
+						<value>AddFirst</value>
+					</prop>
+					<node oor:name="ToolBarItems">
+						<node oor:name="N002" oor:op="replace">
+							<prop oor:name="Context" oor:type="xs:string">
+								<value/>
+							</prop>
+							<prop oor:name="Title">
+								<value xml:lang="en-US">Batch insert</value>
+								<value xml:lang="zh-TW">插入多張圖片</value>
+							</prop>
+							<prop oor:name="URL" oor:type="xs:string">
+								<value>service:org.ossii.writerbatchimport.do</value>
+							</prop>
+							<prop oor:name="Target" oor:type="xs:string">
+								<value>_self</value>
+							</prop>
+						</node> <!-- N002 -->
+					</node> <!-- ToolBarItems -->
+				</node> <!-- N001 -->
+			</node> <!-- org.ossii.ODFService.OfficeToolbarMerging -->
+		</node> <!-- OfficeToolbarMergin -->
+		<node oor:name="OfficeMenuBarMerging">
+			<node oor:name="org.ossii.writerbatchimport.me01" oor:op="replace">
+				<node oor:name="S1" oor:op="replace">
+					<prop oor:name="MergePoint">
+						<value>.uno:InsertMenu\.uno:InsertGraphic</value>
+					</prop>
+					<prop oor:name="MergeCommand">
+						<value>AddAfter</value>
+					</prop>
+					<prop oor:name="MergeFallback">
+						<value>AddPath</value>
+					</prop>
+					<node oor:name="MenuItems">
+						<node oor:name="m1" oor:op="replace">
+							<prop oor:name="Title">
+								<value xml:lang="en-US">Batch insert</value>
+								<value xml:lang="zh-TW">插入多張圖片</value>
+							</prop>
+							<prop oor:name="URL">
+								<value>service:org.ossii.writerbatchimport.do</value>
+							</prop>
+							<prop oor:name="Target" oor:type="xs:string">
+								<value>_self</value>
+							</prop>
+						</node> <!-- m1 -->
+					</node> <!-- MenuItems -->
+				</node> <!-- S1 -->
+			</node> <!-- org.ossii.ODFService.me01 -->
+		</node> <!-- OfficeMenuBarMerging -->
+
+		<node oor:name="OfficeNotebookBar">
+			<node oor:name="org.ossii.writerbatchimport.OfficeNotebookBar" oor:op="replace">
+				<node oor:name="ONB001" oor:op="replace">
+					<prop oor:name="Context" oor:type="xs:string">
+						<value/>
+					</prop>
+					<prop oor:name="URL">
+						<value>service:org.ossii.writerbatchimport.do</value>
+					</prop>
+					<prop oor:name="Title">
+						<value xml:lang="en-US">Batch insert</value>
+						<value xml:lang="zh-TW">插入多張圖片</value>
+					</prop>
+					<prop oor:name="Target">
+						<value>_self</value>
+					</prop>
+				</node> <!-- ONB001 -->
+			</node> <!-- ossii.OfficeNotebookBar -->
+		</node> <!-- OfficeNotebookBar -->
+		<node oor:name="Images">
+			<node oor:name="org.ossii.writerbatchimport.OTM.N001" oor:op="replace">
+				<prop oor:name="URL" oor:type="xs:string">
+					<value>service:org.ossii.writerbatchimport.do</value>
+				</prop>
+				<node oor:name="UserDefinedImages">
+					<prop oor:name="ImageSmallURL" oor:type="xs:string">
+						<value>%origin%/icons/16x16.png</value>
+					</prop>
+					<prop oor:name="ImageBigURL" oor:type="xs:string">
+						<value>%origin%/icons/24x24.png</value>
+					</prop>
+				</node> <!-- UserDefinedImages -->
+			</node> <!-- org.ossii.ODFService.OTM.N001 -->
+		</node> <!-- Images -->
+	</node> <!-- AddonUI -->
+</oor:component-data>
+
