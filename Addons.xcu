@@ -7,7 +7,7 @@
 			<node oor:name="org.ossii.writerbatchimport.OfficeToolbarMerging" oor:op="replace">
 				<node oor:name="N001" oor:op="replace">
 					<prop oor:name="MergeContext" oor:type="xs:string">
-						<value/>
+						<value>com.sun.star.text.TextDocument</value>
 					</prop>
 					<prop oor:name="MergeToolBar" oor:type="xs:string">
 						<value>standardbar</value>
@@ -24,11 +24,11 @@
 					<node oor:name="ToolBarItems">
 						<node oor:name="N002" oor:op="replace">
 							<prop oor:name="Context" oor:type="xs:string">
-								<value/>
+								<value>com.sun.star.text.TextDocument</value>
 							</prop>
 							<prop oor:name="Title">
-								<value xml:lang="en-US">Batch insert</value>
-								<value xml:lang="zh-TW">插入多張圖片</value>
+								<value xml:lang="en-US">Batch insert images in Writer</value>
+								<value xml:lang="zh-TW">在 Writer 插入多張圖片</value>
 							</prop>
 							<prop oor:name="URL" oor:type="xs:string">
 								<value>service:org.ossii.writerbatchimport.do</value>
@@ -44,6 +44,9 @@
 		<node oor:name="OfficeMenuBarMerging">
 			<node oor:name="org.ossii.writerbatchimport.me01" oor:op="replace">
 				<node oor:name="S1" oor:op="replace">
+					<prop oor:name="MergeContext" oor:type="xs:string">
+						<value>com.sun.star.text.TextDocument</value>
+					</prop>
 					<prop oor:name="MergePoint">
 						<value>.uno:InsertMenu\.uno:InsertGraphic</value>
 					</prop>
@@ -55,9 +58,12 @@
 					</prop>
 					<node oor:name="MenuItems">
 						<node oor:name="m1" oor:op="replace">
+							<prop oor:name="Context" oor:type="xs:string">
+								<value>com.sun.star.text.TextDocument</value>
+							</prop>
 							<prop oor:name="Title">
-								<value xml:lang="en-US">Batch insert</value>
-								<value xml:lang="zh-TW">插入多張圖片</value>
+								<value xml:lang="en-US">Batch insert images in Writer</value>
+								<value xml:lang="zh-TW">在 Writer 插入多張圖片</value>
 							</prop>
 							<prop oor:name="URL">
 								<value>service:org.ossii.writerbatchimport.do</value>
@@ -73,16 +79,16 @@
 
 		<node oor:name="OfficeNotebookBar">
 			<node oor:name="org.ossii.writerbatchimport.OfficeNotebookBar" oor:op="replace">
-				<node oor:name="ONB001" oor:op="replace">
+				<node oor:name="WNB002" oor:op="replace">
 					<prop oor:name="Context" oor:type="xs:string">
-						<value/>
+						<value>com.sun.star.text.TextDocument</value>
 					</prop>
 					<prop oor:name="URL">
 						<value>service:org.ossii.writerbatchimport.do</value>
 					</prop>
 					<prop oor:name="Title">
-						<value xml:lang="en-US">Batch insert</value>
-						<value xml:lang="zh-TW">插入多張圖片</value>
+						<value xml:lang="en-US">Batch insert images in Writer</value>
+						<value xml:lang="zh-TW">在 Writer 插入多張圖片</value>
 					</prop>
 					<prop oor:name="Target">
 						<value>_self</value>
