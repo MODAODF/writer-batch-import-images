@@ -5,6 +5,10 @@ import easymacro as app
 def image_batch_import():
 
     doc = app.active
+
+    if (doc.type != "writer"):
+        return
+
     cursor = doc.selection
 
     filters = (
