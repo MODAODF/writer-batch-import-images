@@ -1,4 +1,4 @@
-# odf-ai-service
+# Writer Batch Import Images
 
 A LibreOffice extension to make Writer able to batch import multiple images
 
